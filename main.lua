@@ -57,8 +57,8 @@ function love.load()
     largeur_ecran = love.graphics.getWidth()
     hauteur_ecran = love.graphics.getHeight()
 
-    fontDraw = love.graphics.newFont("font/ZenDots.ttf", 10)
-    Font = love.graphics.newFont("font/Minecraft.ttf", 50)
+    fontDraw = love.graphics.newFont("fonts/ZenDots.ttf", 10)
+    Font = love.graphics.newFont("fonts/Minecraft.ttf", 50)
 
     ship.ox = ship.img:getWidth() / 2
     ship.oy = ship.img:getHeight() / 2
@@ -103,7 +103,7 @@ function love.update(dt)
     end
 
     -- Vélocité / gravité
-    -- ship.vy = ship.vy + (0.6 * dt)
+    ship.vy = ship.vy + (0.6 * dt)
 
     -- Appli de la vélocité X & Y
     ship.x = ship.x + ship.vx
