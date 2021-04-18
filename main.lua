@@ -103,7 +103,7 @@ function love.update(dt)
     end
 
     -- Vélocité / gravité
-    ship.vy = ship.vy + (0.6 * dt)
+    -- ship.vy = ship.vy + (0.6 * dt)
 
     -- Appli de la vélocité X & Y
     ship.x = ship.x + ship.vx
